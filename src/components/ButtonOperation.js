@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { type } from '../actions';
+import { operation } from '../actions';
 import Button from './Button';
 
 const mapDispatchToProps = (
@@ -7,13 +7,13 @@ const mapDispatchToProps = (
   { value },
 ) => ({
   onClick: () => {
-    dispatch(type(value));
+    dispatch(operation(value));
   }
 });
 
-const ButtonType = connect(
+const ButtonOperation = connect(
   null,
   mapDispatchToProps,
 )(Button);
 
-export default ButtonType;
+export default ButtonOperation;

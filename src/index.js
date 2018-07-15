@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
+import 'bootstrap/dist/css/bootstrap-reboot.min.css';
 import registerServiceWorker from './registerServiceWorker';
 import { calcApp } from './reducers';
 import App from './components/App';

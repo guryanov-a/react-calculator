@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { type } from '../actions';
+import { decimal } from '../actions';
 import Button from './Button';
 
 const mapDispatchToProps = (
@@ -7,7 +7,7 @@ const mapDispatchToProps = (
   { value },
 ) => ({
   onClick: () => {
-    dispatch(type(value));
+    dispatch(decimal(value));
   }
 });
 

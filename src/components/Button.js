@@ -7,8 +7,10 @@ const ButtonStyled = styled.button`
   color: #fff;
 `;
 
-const Button = ({ children, onClick }) => (
+const Button = ({ children, onClick, className, id }) => (
   <ButtonStyled
+    id={ id }
+    className={ className }
     type="button"
     onClick={ onClick }
   >
